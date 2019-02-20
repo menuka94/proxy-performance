@@ -4,14 +4,14 @@ declare -a no_of_users=("100" "200" "500" "1000")
 
 # clear existing results
 # cd results/esb
-# find . -type f -iname \*.csv -delete
+# find . -type f -iname \*.jtl -delete
 
 
 for i in "${arr[@]}"
 do
     for j in "${no_of_users[@]}"
         do
-            jmeter -n -t proxy-test.jmx \
+            jmeter -n -t "proxy-test.jmx" \
                 -Jusers=$j \
                 -Jsize=$i \
                 -Jproxy=esb \
