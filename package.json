@@ -1,0 +1,22 @@
+{
+  "name": "proxy-perfomance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "extract-tps-values.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menuka94/proxy-performance.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/menuka94/proxy-performance/issues"
+  },
+  "homepage": "https://github.com/menuka94/proxy-performance#readme",
+  "dependencies": {
+    "convert-array-to-csv": "^1.0.4"
+  }
+}
