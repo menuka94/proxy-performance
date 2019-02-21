@@ -1,0 +1,15 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1550676493154,78,HTTP Request,200,OK,Users 1-31,,true,,113,1289,60,60,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,78,0,1
+1550676493155,77,HTTP Request,200,OK,Users 1-84,,true,,113,1289,60,60,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,77,0,1
+1550676493155,77,HTTP Request,200,OK,Users 1-160,,true,,113,1289,60,60,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,77,0,1
+1550676493156,76,HTTP Request,200,OK,Users 1-60,,true,,113,1289,57,57,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,76,0,0
+1550676493158,74,HTTP Request,200,OK,Users 1-61,,true,,113,1289,57,57,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,74,0,1
+1550676493158,74,HTTP Request,200,OK,Users 1-194,,true,,113,1289,53,53,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,74,0,1
+1550676493185,49,HTTP Request,200,OK,Users 1-27,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,49,0,3
+1550676493200,34,HTTP Request,200,OK,Users 1-38,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,34,0,2
+1550676493186,48,HTTP Request,200,OK,Users 1-106,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,48,0,3
+1550676493186,48,HTTP Request,200,OK,Users 1-32,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,48,0,3
+1550676493197,37,HTTP Request,200,OK,Users 1-52,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,37,0,2
+1550676493200,34,HTTP Request,200,OK,Users 1-118,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,34,0,1
+1550676493218,16,HTTP Request,200,OK,Users 1-35,,true,,113,1289,52,52,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,16,0,4
+1550676493161,74,HTTP Request,200,OK,Users 1-133,,true,,113,1289,49,49,http://Menukas-MacBook-Pro.local:8280/services/EchoEndpoint,74,0,1

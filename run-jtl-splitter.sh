@@ -5,7 +5,7 @@ declare -a payloads=("500" "1024" "5120" "10240" "102400" "512000")
 declare -a users=("100" "200" "500" "1000")
 
 
-proxy=netty
+proxy=esb
 resultsDir=results/$proxy
 
 for i in "${payloads[@]}"
