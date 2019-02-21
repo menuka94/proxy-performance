@@ -27,3 +27,4 @@ do
         done
 done
 
+./jtl-splitter.sh -- -f results/esb/esb-payload500-users500.jtl -t 1 -s

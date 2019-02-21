@@ -22,3 +22,13 @@ do
         done
 done
 
+
+            jmeter -n -t "proxy-test.jmx" \
+                -Jusers=500 \
+                -Jsize=500 \
+                -Jproxy=esb \
+                -JserverName='Menukas-MacBook-Pro.local' \
+                -Jport=8280 \
+                -Jpath='/services/EchoEndpoint' \
+                -l results/esb/esb-payload500-users500.jtl
+

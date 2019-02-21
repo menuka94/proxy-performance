@@ -1,21 +1,21 @@
 {
   "HTTP Request": {
-    "samples": 1441,
-    "errors": 66,
-    "errorPercentage": 4.58,
-    "throughput": 13.84,
+    "samples": 753,
+    "errors": 0,
+    "errorPercentage": 0.00,
+    "throughput": 12.56,
     "min": 2,
-    "max": 51120,
-    "mean": 2331.20,
-    "stddev": 10558.88,
-    "median": 10.00,
-    "p75": 30.00,
-    "p90": 48.00,
-    "p95": 163.00,
-    "p98": 50687.00,
-    "p99": 50687.00,
-    "p999": 51199.00,
-    "receivedKBytesRate": 2.74,
-    "sentKBytesRate": 10.06
+    "max": 267,
+    "mean": 4.40,
+    "stddev": 11.46,
+    "median": 3.00,
+    "p75": 4.00,
+    "p90": 6.00,
+    "p95": 7.00,
+    "p98": 9.00,
+    "p99": 10.00,
+    "p999": 267.00,
+    "receivedKBytesRate": 1.39,
+    "sentKBytesRate": 9.57
   }
 }
