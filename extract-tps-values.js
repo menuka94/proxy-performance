@@ -1,7 +1,7 @@
 const fs = require('fs');
 const {convertArrayToCSV} = require('convert-array-to-csv');
 
-const proxy = "netty";
+const proxy = "esb";
 const resultsDir = "results/" + proxy;
 
 const payloads = ["500", "1024", "5120", "10240", "102400", "512000"];
@@ -15,20 +15,27 @@ payloads.forEach((payload) => {
     users.forEach((users) => {
         let summaryFileCommon = proxy + "-payload" + payload + "-users" + users;
         let summaryFilePath = resultsDir + "/" + summaryFileCommon + "/" + summaryFileCommon + "-measurement-summary.json";
-        console.log(summaryFileCommon);
-        let summaryJson = JSON.parse(fs.readFileSync(summaryFilePath, 'utf-8'));
-        let throughput = summaryJson["HTTP Request"].throughput;
-        let errorPercentage = summaryJson["HTTP Request"].errorPercentage;
+        if (fs.existsSync(summaryFilePath)) {
+            console.log(summaryFileCommon);
+            let summaryJson = JSON.parse(fs.readFileSync(summaryFilePath, 'utf-8'));
 
-        console.log("Throughput:", throughput);
-        console.log("ErrorPercentage:", errorPercentage);
+            let jsonHttpRequest = summaryJson["HTTP Request"];
+            console.log(jsonHttpRequest);
+            if (jsonHttpRequest) {
+                let throughput = jsonHttpRequest.throughput;
+                let errorPercentage = jsonHttpRequest.errorPercentage;
 
-        records.push({
-            payload: payload,
-            users: users,
-            errorPercentage: errorPercentage,
-            throughput: throughput
-        });
+                console.log("Throughput:", throughput);
+                console.log("ErrorPercentage:", errorPercentage);
+
+                records.push({
+                    payload: payload,
+                    users: users,
+                    errorPercentage: errorPercentage,
+                    throughput: throughput
+                });
+            }
+        }
         console.log();
     });
     console.log();
@@ -38,8 +45,8 @@ const csvs = convertArrayToCSV(records);
 console.log(csvs);
 
 
-fs.writeFile('csvs/netty.csv', csvs, function (err) {
-    if(err) {
+fs.writeFile('csvs/' + proxy + '.csv', csvs, function (err) {
+    if (err) {
         return console.log(err);
     }
     console.log('...Done');
