@@ -1,0 +1,21 @@
+{
+  "HTTP Request": {
+    "samples": 153,
+    "errors": 0,
+    "errorPercentage": 0.00,
+    "throughput": 2.55,
+    "min": 2,
+    "max": 35,
+    "mean": 3.61,
+    "stddev": 2.80,
+    "median": 3.00,
+    "p75": 4.00,
+    "p90": 5.00,
+    "p95": 6.00,
+    "p98": 7.00,
+    "p99": 10.00,
+    "p999": 35.00,
+    "receivedKBytesRate": 2.87,
+    "sentKBytesRate": 3.14
+  }
+}
