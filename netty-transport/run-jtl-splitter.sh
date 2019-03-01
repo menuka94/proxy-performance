@@ -5,7 +5,7 @@ declare -a payloads=("500" "1024" "5120" "10240" "102400" "512000")
 declare -a users=("100" "200" "500" "1000")
 
 
-proxy=without-netty
+proxy=with-netty
 resultsDir=results/$proxy
 
 for i in "${payloads[@]}"
@@ -18,7 +18,7 @@ do
                echo "File not found! $file"
                continue
             fi
-            ../jtl-splitter.sh -- -f $file -t 1 -s && \
+            ../jtl-splitter.sh -- -f $file -t 2 -s && \
             mkdir -p $newfolder && \
             mv $resultsDir/$proxy-payload$i-users$j-measurement-summary.json $newfolder && \
             mv $resultsDir/$proxy-payload$i-users$j-warmup-summary.json $newfolder && \
@@ -27,4 +27,4 @@ do
         done
 done
 
-# ./jtl-splitter.sh -- -f results/with-netty/with-payload500-users500.jtl -t 1 -s
+# ./jtl-splitter.sh -- -f results/with-netty/with-payload500-users500.jtl -t 5 -s
